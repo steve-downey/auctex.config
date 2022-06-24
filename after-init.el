@@ -26,7 +26,7 @@
   (setq reftex-plug-into-AUCTeX t)
   (setq TeX-PDF-mode t)
   (setq TeX-source-correlate-method 'synctex)
-  (setq TeX-source-correlate-start-server t))
+  (setq TeX-source-correlate-start-server t)
 
   (eval-after-load "tex"
     '(add-to-list 'TeX-command-list '("latexmk" "latexmk -synctex=1 -shell-escape -pdf %s" TeX-run-TeX nil t :help "Process file with latexmk")))
@@ -47,7 +47,7 @@
               (smartparens-mode)
               (turn-on-reftex)
               (LaTeX-math-mode)
-              (reftex-isearch-minor-mode))
+              (reftex-isearch-minor-mode)))
 
 
   ;; Update PDF buffers after successful LaTeX runs
