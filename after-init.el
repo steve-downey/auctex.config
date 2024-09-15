@@ -5,7 +5,7 @@
 
   :requires (latex company)
 
-  :mode ("\\.tex\\'" . latex-mode)
+  :mode ("\\.tex\\'" . LaTeX-mode)
 
   :config
   (use-package rainbow-delimiters)
@@ -47,7 +47,9 @@
               (smartparens-mode)
               (turn-on-reftex)
               (LaTeX-math-mode)
-              (reftex-isearch-minor-mode)))
+              (reftex-isearch-minor-mode)
+              (flyspell-mode)
+              (visual-line-mode)))
 
 
   ;; Update PDF buffers after successful LaTeX runs
